@@ -1,49 +1,350 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
-<meta name=Generator content="Microsoft Word 15 (filtered)">
-<style>
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
-@font-face
-	{font-family:Calibri;
-	panose-1:2 15 5 2 2 2 4 3 2 4;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:8.0pt;
-	margin-left:0cm;
-	line-height:107%;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-.MsoChpDefault
-	{font-family:"Calibri",sans-serif;}
-.MsoPapDefault
-	{margin-bottom:8.0pt;
-	line-height:107%;}
-@page WordSection1
-	{size:595.3pt 841.9pt;
-	margin:70.85pt 70.85pt 2.0cm 70.85pt;}
-div.WordSection1
-	{page:WordSection1;}
--->
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>China!</title>
+  <script data-goatcounter="https://steffenhuck.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Noto+Serif+SC:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #706262;
+      --cream: #f0e8d5;
+      --cream-mid: #d8d0bc;
+      --cream-muted: #b0a898;
+      --cream-faint: #907870;
+    }
 
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--cream);
+      font-family: 'Noto Serif', Georgia, serif;
+      font-size: 1.2rem;
+      line-height: 1.9;
+      padding: 4rem 1.5rem 7rem;
+      max-width: 660px;
+      margin: 0 auto;
+    }
+
+    .masthead {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-family: 'Noto Serif', serif;
+      font-style: italic;
+      font-size: 4rem;
+      font-weight: 700;
+      color: var(--cream);
+      letter-spacing: 0.1em;
+      line-height: 1.1;
+      margin-bottom: 0.4rem;
+    }
+
+    .subtitle {
+      font-family: 'Noto Serif', serif;
+      font-style: normal;
+      font-size: 1.5rem;
+      font-weight: 300;
+      color: var(--cream-mid);
+      letter-spacing: 0.04em;
+      margin-bottom: 2rem;
+    }
+
+    .chinese-decoration {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 3.5rem;
+      font-weight: 300;
+      color: var(--cream);
+      opacity: 0.15;
+      letter-spacing: 0.15em;
+      margin: 0 auto 2rem;
+      display: block;
+      text-align: center;
+      line-height: 1;
+    }
+
+    .cast-block {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding: 0.8rem 0;
+    }
+
+    .cast-heading {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      color: var(--cream-mid);
+      margin-bottom: 0.4rem;
+    }
+
+    .cast-list {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: var(--cream-muted);
+      letter-spacing: 0.08em;
+      line-height: 1.8;
+    }
+
+    .play {
+      margin-top: 1rem;
+    }
+
+    .stage {
+      font-style: italic;
+      font-size: 1.08rem;
+      font-weight: 300;
+      color: var(--cream-mid);
+      opacity: 0.85;
+      margin: 1.3rem 0 0.6rem;
+      line-height: 1.75;
+    }
+
+    .beat {
+      font-style: italic;
+      font-size: 1.08rem;
+      font-weight: 300;
+      color: var(--cream-mid);
+      opacity: 0.85;
+      margin: 0.7rem 0;
+    }
+
+    .sd {
+      font-style: italic;
+      font-size: 1.08rem;
+      font-weight: 300;
+      color: var(--cream-mid);
+      opacity: 0.85;
+    }
+
+    .speaker {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      color: var(--cream);
+      margin-top: 1.6rem;
+      margin-bottom: 0.15rem;
+      display: block;
+    }
+
+    .line {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: var(--cream);
+      margin: 0 0 0.1rem 0;
+      line-height: 1.85;
+    }
+
+    .chinese {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 1.3rem;
+    }
+
+    .quote {
+      font-style: italic;
+    }
+
+    .author {
+      margin-top: 5rem;
+      text-align: center;
+      font-family: 'Noto Serif', serif;
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: var(--cream-muted);
+      letter-spacing: 0.18em;
+    }
+
+    .author a {
+      color: var(--cream-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .author a:hover {
+      color: var(--cream);
+    }
+
+    @media (max-width: 600px) {
+      body {
+        font-size: 1.05rem;
+        padding: 2.5rem 1.2rem 5rem;
+      }
+      h1 {
+        font-size: 2.8rem;
+      }
+      .line {
+        font-size: 1.05rem;
+      }
+      .chinese-decoration {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
 </head>
+<body>
 
-<body lang=DE>
+<div class="masthead">
+  <h1>China!</h1>
+  <div class="subtitle">A Play</div>
+  <span class="chinese-decoration">革命大联合</span>
+</div>
 
-<div class=WordSection1>
+<div class="cast-block">
+  <div class="cast-heading">CAST</div>
+  <div class="cast-list">
+    Jiang Qing · The Instructor · The New Student<br>
+    The First Student · The Other Students
+  </div>
+</div>
 
-<p class=MsoNormal>xx</p>
+<div class="play">
+
+  <p class="stage">(A generously proportioned private dining room in a restaurant in Chongqing. The students and the Instructor sit along a long rectangular table. Jiang Qing sits at the head. A lavish selection of starters has just arrived.)</p>
+
+  <span class="speaker">Jiang Qing</span>
+  <p class="line">Enjoy!</p>
+
+  <p class="stage">(The students help themselves to the dishes.)</p>
+
+  <span class="speaker">Jiang Qing</span>
+  <p class="line">And please make sure you try the fūqī fèipiàn.</p>
+
+  <span class="speaker">The New Student</span>
+  <p class="line">What does that mean?</p>
+
+  <span class="speaker">Jiang Qing</span>
+  <p class="line">Try it first.</p>
+
+  <span class="speaker">The New Student</span>
+  <p class="line">Delicious.</p>
+
+  <span class="speaker">Jiang Qing</span>
+  <p class="line">These are a husband and wife's lung slices. They were breathing together. And now you can inhale their breaths.</p>
+
+  <p class="beat">(A beat.)</p>
+
+  <span class="speaker">Jiang Qing</span>
+  <p class="line">Food is about love.</p>
+
+  <p class="beat">(Another beat.)</p>
+
+  <span class="speaker">Jiang Qing</span>
+  <p class="line">China is about love.</p>
+
+  <span class="speaker">The Instructor</span>
+  <p class="line">Thank you for this extraordinary treat, Madame Mao.</p>
+
+  <span class="speaker">Jiang Qing</span>
+  <p class="line">For you, Comrade Qing.</p>
+
+  <span class="speaker">The Other Students</span>
+  <p class="line">Hot! Hot! Hot!</p>
+
+  <span class="speaker">The First Student</span>
+  <p class="line">I have always been drawn to spice.</p>
+
+  <span class="speaker">Jiang Qing</span>
+  <p class="line">Good for you.</p>
+
+  <span class="speaker">The Instructor</span>
+  <p class="line">Comrade Qing, why don't you tell us a little more about your splendid revolution?</p>
+
+  <span class="speaker">Jiang Qing</span>
+  <p class="line">This great city played its own role in it. People were not afraid. The Yangtze can tell you.</p>
+
+  <p class="beat">(A beat.)</p>
+
+  <span class="speaker">Jiang Qing</span>
+  <p class="line">Our revolution was the most ambitious project in human history — to transform not just the state, but the people. We did not change laws. We changed minds.</p>
+
+  <span class="speaker">The First Student</span>
+  <p class="line">A million of those minds were just extinguished.</p>
+
+  <span class="speaker">Jiang Qing</span>
+  <p class="line">For those, it was the only change possible.</p>
+
+  <span class="speaker">The Instructor</span>
+  <p class="line">At the Institute, we believe in the power of education. But everything has its limits.</p>
+
+  <span class="speaker">Jiang Qing</span>
+  <p class="line">China has no limits. Look at it today. Look at this city. The biggest city in the world. When I was born, it was a mere river town.</p>
+
+  <p class="beat">(A beat.)</p>
+
+  <span class="speaker">Jiang Qing</span>
+  <p class="line">There are people who think I failed. But without me, none of this would be here.</p>
+
+  <span class="speaker">The New Student</span>
+  <p class="line">If I may ask, Comrade Qing, what are your thoughts on Europe?</p>
+
+  <span class="speaker">Jiang Qing</span>
+  <p class="line">Europe is a Disney park. Did you try the century eggs?</p>
+
+  <span class="speaker">The New Student</span>
+  <p class="line">Not yet, but let me have one.</p>
+
+  <p class="stage">(He takes a century egg and eats it.)</p>
+
+  <span class="speaker">The New Student</span>
+  <p class="line">Um... um... It's an acquired... it's very tasteful.</p>
+
+  <span class="speaker">Jiang Qing</span>
+  <p class="line">Of course it is an acquired taste. You can speak freely here.</p>
+
+  <span class="speaker">The First Student</span>
+  <p class="line">Your revolution was about acquiring taste.</p>
+
+  <span class="speaker">The Other Students</span>
+  <p class="line">Hot! Hot! Hot!</p>
+
+  <span class="speaker">Jiang Qing</span>
+  <p class="line">Switzerland is different, of course. You have your mountains and your Rütli Oath.</p>
+
+  <span class="speaker">The Instructor</span>
+  <p class="line"><span class="quote">"Wir wollen sein ein einzig Volk von Brüdern,<br>In keiner Not uns trennen und Gefahr."</span></p>
+
+  <span class="speaker">Jiang Qing</span>
+  <p class="line"><span class="chinese">革命大联合</span></p>
+
+  <span class="speaker">The New Student</span>
+  <p class="line">What a fascinating parallel.</p>
+
+  <span class="speaker">The First Student</span>
+  <p class="line"><span class="sd">(whispering)</span> You speak Mandarin?</p>
+
+  <span class="speaker">The New Student</span>
+  <p class="line"><span class="sd">(whispering back)</span> I do.</p>
+
+  <span class="speaker">Jiang Qing</span>
+  <p class="line">Our two nations should form an alliance. I shall talk to Beijing later tonight.</p>
+
+  <span class="speaker">The Instructor</span>
+  <p class="line">And I will talk to the Director.</p>
+
+  <span class="speaker">Jiang Qing</span>
+  <p class="line">Why didn't you bring your permanent resident? Didn't he always want to go to China?</p>
+
+  <span class="speaker">The First Student</span>
+  <p class="line">He has a chest infection.</p>
+
+  <span class="speaker">Jiang Qing</span>
+  <p class="line">Give him my greetings. And my wishes for a speedy recovery.</p>
 
 </div>
 
-</body>
+<div class="author">
+  <a href="https://steffenhuck.github.io/" data-goatcounter-click="author-link">steffen huck</a>
+</div>
 
+</body>
 </html>
